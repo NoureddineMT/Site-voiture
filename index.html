@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ajouter du Javascript dans un site de location de voiture</title>
+</head>
+<body>
+
+    <header class="flex flex-column padding">
+
+        <!-- BURGER MENU -->
+        <div class="flex justify-end">
+            <div id="burger_menu" class="flex flex-column align-center justify-center">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <!-- Scrolling menu -->
+
+        <div id="scrolling_menu">
+            <ul>
+                <li>
+                    <a href="#"> Rent a car</a>
+                </li>
+                <li>
+                    <a href="#"> Rent a commercial car</a>
+                </li>
+                <li>
+                    <a href="#"> Reserve a cab</a>
+                </li>
+                <li>
+                    <a href="#"> Discover our agencies</a>
+                </li>
+
+                <li>
+                    <a href="#"> My account</a>
+                </li>
+                <li>
+                    <a href="#"> Contact</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="header_renting_part" class="flex flex-column align-center justify-between">
+
+            <!-- TOP PART -->
+            <div class="flex flex-column align-center">
+                <div>
+                    <h1 class="color_white">Welcome On Board</h1>
+                </div>
+                
+                <div>
+                    <p class="color_white">Rental car 24h/24 7/7</p>
+                </div>
+            </div>
+
+            <!-- BOTTOM PART -->
+
+            <div>
+                <form action="#" id="rental_form" class="flex">
+
+                    <div id="pickup_part" class="flex">
+                        <select name="rentalSelection">
+                            <option value="none"> Pick-up Location</option>
+                            <option value="paris"> Paris</option>
+                            <option value="madrid"> Madrid</option>
+                            <option value="lisboa"> Lisboa</option>
+                            <option value="casablanca"> Casablanca</option>
+                        </select>
+                        <input type="date" placeholder="Pick-up date">
+                        <input type="date" placeholder="Drop off date">
+                    </div>
+
+                    <div id="submitPart">
+                        <input type="submit" value="Validate search">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="flex flex-column align-center padding">
+
+
+        <!-- FIRST PART FILTER -->
+        <div id="results" class="flex justify-between">
+            <p> <span>7</span> Results</p>
+
+            <form action="#">
+                <select name="filter" >
+                    <option value="Order by price">Order by price</option>
+                    <option value="Small Cars">Small Cars</option>
+                    <option value="Large Cars">Large Cars</option>
+                    <option value="Premium Cars">Premium Cars</option>
+                    <option value="Estate Cars">Estate Cars</option>
+                </select>
+            </form>
+        </div>
+
+        <!-- CARS -->
+
+        <!-- CAR 1 -->
+        <div class="car_description flex align-center">
+            <!-- LEFT PART -->
+            <div class="flex align-center">
+                <!-- LEFT ARROW -->
+                <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule1.png" alt="First vehicule">
+                        <img src="img/vehicule1.png" alt="Second vehicule">
+                        <img src="img/vehicule1.png" alt="Third vehicule">
+                    </div>
+                </div>
+                <!-- RIGHT ARROW -->
+                <div class="arrow_rigth"></div>
+            </div>
+
+            <!-- RIGHT PART -->
+            <div class="car_details">
+                <h3>Peugeot 208</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <p>999 € - Paris Agency</p>
+                <button>Rent and Pay</button>
+            </div>
+        </div>
+
+        <!-- CAR 2 -->
+        <div class="car_description flex align-center">
+            <!-- LEFT PART -->
+            <div class="flex align-center">
+                <!-- LEFT ARROW -->
+                <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule2.png" alt="First vehicule">
+                        <img src="img/vehicule2.png" alt="Second vehicule">
+                        <img src="img/vehicule2.png" alt="Third vehicule">
+                    </div>
+                </div>
+                <!-- RIGHT ARROW -->
+                <div class="arrow_rigth"></div>
+            </div>
+        
+            <!-- RIGHT PART -->
+            <div class="car_details">
+                <h3>Peugeot 208</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <p>999 € - Paris Agency</p>
+                <button>Rent and Pay</button>
+            </div>
+        </div>
+
+
+        <!-- CAR 3 -->
+        <div class="car_description flex align-center">
+            <!-- LEFT PART -->
+            <div class="flex align-center">
+                <!-- LEFT ARROW -->
+                <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule3.png" alt="First vehicule">
+                        <img src="img/vehicule3.png" alt="Second vehicule">
+                        <img src="img/vehicule3.png" alt="Third vehicule">
+                    </div>
+                </div>
+                <!-- RIGHT ARROW -->
+                <div class="arrow_rigth"></div>
+            </div>
+        
+            <!-- RIGHT PART -->
+            <div class="car_details">
+                <h3>Peugeot 208</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <p>999 € - Paris Agency</p>
+                <button>Rent and Pay</button>
+            </div>
+        </div>
+
+        <!-- CAR 4 -->
+        <div class="car_description flex align-center">
+            <!-- LEFT PART -->
+            <div class="flex align-center">
+                <!-- LEFT ARROW -->
+                <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule4.png" alt="First vehicule">
+                        <img src="img/vehicule4.png" alt="Second vehicule">
+                        <img src="img/vehicule4.png" alt="Third vehicule">
+                    </div>
+                </div>                
+                <!-- RIGHT ARROW -->
+                <div class="arrow_rigth"></div>
+            </div>
+        
+            <!-- RIGHT PART -->
+            <div class="car_details">
+                <h3>Peugeot 208</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <p>999 € - Paris Agency</p>
+                <button>Rent and Pay</button>
+            </div>
+        </div>
+
+
+        <!-- Vehicules to be faded -->
+
+        <div class="toBeFaded">
+            <!-- CAR 1 -->
+            <div class="car_description flex align-center">
+                <!-- LEFT PART -->
+                <div class="flex align-center">
+                    <!-- LEFT ARROW -->
+                    <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule1.png" alt="First vehicule">
+                        <img src="img/vehicule1.png" alt="Second vehicule">
+                        <img src="img/vehicule1.png" alt="Third vehicule">
+                    </div>
+                </div>                   
+                 <!-- RIGHT ARROW -->
+                    <div class="arrow_rigth"></div>
+                </div>
+            
+                <!-- RIGHT PART -->
+                <div class="car_details">
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <p>999 € - Paris Agency</p>
+                    <button>Rent and Pay</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toBeFaded">
+            <!-- CAR 2 -->
+            <div class="car_description flex align-center">
+                <!-- LEFT PART -->
+                <div class="flex align-center">
+                    <!-- LEFT ARROW -->
+                    <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule2.png" alt="First vehicule">
+                        <img src="img/vehicule2.png" alt="Second vehicule">
+                        <img src="img/vehicule2.png" alt="Third vehicule">
+                    </div>
+                </div>                    
+                <!-- RIGHT ARROW -->
+                    <div class="arrow_rigth"></div>
+                </div>
+        
+                <!-- RIGHT PART -->
+                <div class="car_details">
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <p>999 € - Paris Agency</p>
+                    <button>Rent and Pay</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toBeFaded">
+            <!-- CAR 3 -->
+            <div class="car_description flex align-center">
+                <!-- LEFT PART -->
+                <div class="flex align-center">
+                    <!-- LEFT ARROW -->
+                    <div class="arrow_left"></div>
+                    <div class="img_outer">
+                        <div class="img_container flex">
+                            <img src="img/vehicule3.png" alt="First vehicule">
+                            <img src="img/vehicule3.png" alt="Second vehicule">
+                            <img src="img/vehicule3.png" alt="Third vehicule">
+                        </div>
+                    </div>                   
+                 <!-- RIGHT ARROW -->
+                    <div class="arrow_rigth"></div>
+                </div>
+        
+                <!-- RIGHT PART -->
+                <div class="car_details">
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <p>999 € - Paris Agency</p>
+                    <button>Rent and Pay</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toBeFaded">
+            <!-- CAR 4 -->
+            <div class="car_description flex align-center">
+                <!-- LEFT PART -->
+                <div class="flex align-center">
+                    <!-- LEFT ARROW -->
+                    <div class="arrow_left"></div>
+                    <div class="img_outer">
+                        <div class="img_container flex">
+                            <img src="img/vehicule4.png" alt="First vehicule">
+                            <img src="img/vehicule4.png" alt="Second vehicule">
+                            <img src="img/vehicule4.png" alt="Third vehicule">
+                        </div>
+                    </div>                    
+                    <!-- RIGHT ARROW -->
+                    <div class="arrow_rigth"></div>
+                </div>
+        
+                <!-- RIGHT PART -->
+                <div class="car_details">
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <p>999 € - Paris Agency</p>
+                    <button>Rent and Pay</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="flex justify-center">
+
+        <img src="img/agence.png" alt="The Agency">
+        <ul>
+            <li> <p>Our Agency</p> </li>
+            <li> <p>300 Boulevard de vaugirard 75015 Paris</p> </li>
+            <li> <p>Opened 24h/24 7/7 between 14h and 20h</p> </li>
+            <li> <p>01 02 03 04 10</p></li>
+            <li> <p>contact@mail.com</p> </li>
+        </ul>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
